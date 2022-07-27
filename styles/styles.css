@@ -121,9 +121,8 @@ header {
 /*--FIN HERO INFO--*/
 
 /*--HERO FORM--*/
-.contact-info{
-    width: 35rem;
-    
+.contact-info {
+  width: 35rem;
 }
 .contact-info form {
   display: flex;
@@ -367,3 +366,150 @@ header {
 /*--FIN CREDITOS--*/
 
 /*FIN FOOTER*/
+
+/*RESPONSIVE TABLET*/
+@media screen and (max-width: 1112px) {
+  /*HEADER*/
+  .logo img {
+    width: 6.2rem;
+    height: 5.4rem;
+  }
+  .header-info {
+    width: 100%;
+  }
+  .triangulo-top-left {
+    border-top: 3rem solid var(--main2);
+    border-left: 3rem solid transparent;
+  }
+  .triangulo-top-right {
+    border-top: 3rem solid var(--main2);
+    border-right: 3rem solid transparent;
+  }
+  .oculto-responsive {
+    display: none;
+  }
+  .header-info a {
+    font-size: 0.8rem;
+  }
+  .header-info a i {
+    margin-right: 0.3rem;
+  }
+  /*FIN HEADER*/
+
+  /*HERO*/
+  .hero {
+    height: 25rem;
+  }
+  /*--HERO INFO--*/
+  .hero-info {
+    margin-right: 1.5rem;
+    padding: 0.3rem;
+    width: 20rem;
+  }
+  .hero-info h1 {
+    font-size: 1.5rem;
+  }
+  .hero-info p {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  .hero-info-divisor {
+    width: 4rem;
+    margin: 0.2rem auto;
+    height: 0.1rem;
+  }
+  /*--FIN HERO INFO--*/
+
+  /*--HERO FORM--*/
+  .contact-info {
+    width: 20rem;
+  }
+  .contact-info h2 {
+    font-size: 1.5rem;
+  }
+  .contact-info form input {
+    font-size: .8rem;
+    margin: 0.2rem;
+    width: 100%;
+  }
+  .contact-info form textarea {
+    font-size: 0.8rem;
+    margin: 0.2rem;
+    width: 100%;
+  }
+  .btnForm button {
+    font-size: 0.8rem;
+    margin: 0.2rem;
+  }
+  /*--FIN HERO FORM--*/
+
+  /*FIN HERO*/
+
+  /*SUBHERO*/
+  .subHero {
+    width: 100%;
+  }
+  .subHero-caracteristica img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .subHero-caracteristica p {
+    font-size: 0.7rem;
+  }
+  /*FIN SUBHERO*/
+
+  /*SERVICIOS*/
+  .servicios {
+    width: 90%;
+    margin: 3rem auto;
+  }
+  .servicios h2 {
+    font-size: 1.5rem;
+  }
+  .servicios-divisor {
+    width: 7rem;
+    height: 0.07rem;
+  }
+  .contenedor-servicios {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .servicio {
+    height: 19rem;
+    width: 15rem;
+  }
+  .servicio img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .servicio h3 {
+    font-size: 1rem;
+  }
+  .servicio p {
+    height: 5rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .servicio:hover {
+    height: 20rem;
+  }
+  /*FIN SERVICIOS*/
+
+  /*FOOTER*/
+  /*--FOOTER-GENERAL--*/
+  .footer-general img {
+    width: 9rem;
+    height: 8rem;
+  }
+  /*--FIN FOOTER-GENERAL--*/
+  /*FIN FOOTER*/
+}
+/*FIN RESPONSIVE TABLET*/
+
+/*RESPONSIVE MOBILE*/
+@media screen and (max-width: 768px) {
+  html {
+    background-color: #ff9100;
+  }
+}
+/*FIN RESPONSIVE MOBILE*/
