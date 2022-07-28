@@ -389,7 +389,7 @@ header {
     display: none;
   }
   .header-info a {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   .header-info a i {
     margin-right: 0.3rem;
@@ -398,20 +398,20 @@ header {
 
   /*HERO*/
   .hero {
-    height: 25rem;
+    height: auto;
   }
   /*--HERO INFO--*/
   .hero-info {
-    margin-right: 1.5rem;
+    margin: auto;
     padding: 0.3rem;
     width: 20rem;
   }
   .hero-info h1 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
   .hero-info p {
     padding: 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .hero-info-divisor {
     width: 4rem;
@@ -423,23 +423,26 @@ header {
   /*--HERO FORM--*/
   .contact-info {
     width: 20rem;
+    margin: 2rem auto;
   }
   .contact-info h2 {
     font-size: 1.5rem;
   }
   .contact-info form input {
-    font-size: 0.8rem;
-    margin: 0.2rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+    padding: .5rem;
     width: 100%;
   }
   .contact-info form textarea {
-    font-size: 0.8rem;
-    margin: 0.2rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+    padding: .5rem;
     width: 100%;
   }
   .btnForm button {
-    font-size: 0.8rem;
-    margin: 0.2rem;
+    font-size: 1rem;
+    margin: 0.5rem;
   }
   /*--FIN HERO FORM--*/
 
@@ -464,7 +467,7 @@ header {
     margin: 3rem auto;
   }
   .servicios h2 {
-    font-size: 1.5rem;
+    font-size:2rem;
   }
   .servicios-divisor {
     width: 7rem;
@@ -475,23 +478,26 @@ header {
     height: auto;
   }
   .servicio {
-    height: 19rem;
-    width: 15rem;
+    height: 22rem;
+    width: 18rem;
   }
   .servicio img {
     width: 4rem;
     height: 4rem;
+    margin: 1rem auto;
   }
   .servicio h3 {
-    font-size: 1rem;
+    font-size: 1.3rem;
+    height: 4rem;
+    margin-bottom: 1rem;
   }
   .servicio p {
-    height: 5rem;
+    height: 8rem;
     padding: 0.5rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .servicio:hover {
-    height: 20rem;
+    height: 22rem;
   }
   /*FIN SERVICIOS*/
 
@@ -516,23 +522,6 @@ header {
   .header-info {
     width: 100%;
   }
-  .triangulo-top-left {
-    border-top: 3rem solid var(--main2);
-    border-left: 3rem solid transparent;
-  }
-  .triangulo-top-right {
-    border-top: 3rem solid var(--main2);
-    border-right: 3rem solid transparent;
-  }
-  .oculto-responsive {
-    display: none;
-  }
-  .header-info a {
-    font-size: 0.8rem;
-  }
-  .header-info a i {
-    margin-right: 0.3rem;
-  }
   /*FIN HEADER*/
 
   /*HERO*/
@@ -543,15 +532,31 @@ header {
   /*--HERO INFO--*/
   .hero-info {
     margin: 0;
+    margin-top: 3rem;
     width: auto;
+  }
+  .hero-info h1{
+    font-size: 2rem;
+  }
+  .hero-info p{
+    font-size: 1.3rem;
   }
   /*--FIN HERO INFO--*/
 
   /*--HERO FORM--*/
   .contact-info {
-    width: auto;
+    width: 80%;
     margin: 1rem 0;
-   min-width: 15rem;
+  }
+  .contact-info form input,.contact-info form textarea{
+    font-size: 1.1rem;
+    margin: .5rem;
+    padding: .5rem;
+  }
+  .btnForm button{
+    font-size: 1.1rem;
+    margin: .5rem;
+    padding: 1rem;
   }
   /*--FIN HERO FORM--*/
 
@@ -563,30 +568,57 @@ header {
   }
   .subHero-caracteristica {
     margin: 0.3rem auto;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+  }
+  .subHero-caracteristica p{
+    width: 20rem;
+  }
+  .subHero-caracteristica img{
+    margin-right: .5rem;
   }
   /*FIN SUBHERO*/
 
   /*SERVICIOS*/
   .servicios {
     margin: 2rem auto;
+    padding: 0;
   }
-  .contenedor-servicios {
-    margin-top: 0;
+  .servicios h2{
+    font-size: 1.7rem;
+  }
+  .contenedor-servicios{
+    padding: 0;
+  }
+  .servicio{
+    width: 90%;
+    height: 21rem;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  .servicio img{
+   width: 5rem;
+   height: 5rem;
+   margin-top: 1rem;
+  }
+  .servicio h3{
+    font-size: 1.2rem;
+  }
+  .servicio p{
+    font-size: 1rem;
+    padding: .3rem;
+    height: 9rem;
+  }
+  .servicio:hover{
+    height: 23rem;
   }
   /*FIN SERVICIOS*/
-
-  /*BTN-WSP*/
-  .btn-wsp {
-    font-size: 2rem;
-    width: 3.4rem;
-    height: 3.4rem;
-  }
-  /*FIN BTN-WSP*/
 
   /*FOOTER*/
   /*--FOOTER-GENERAL--*/
   .footer-general {
-    flex-wrap: wrap;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
     height: 20rem;
@@ -594,18 +626,20 @@ header {
   .footer-general img {
     margin: 0;
     padding: 1rem;
+    width: 11rem;
+    height: 12rem;
   }
   .footer-info {
     align-items: center;
     justify-content: center;
   }
   .footer-info h4 {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .footer-info a {
     margin: 0;
     padding: 0;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   /*--FIN FOOTER-GENERAL--*/
 
