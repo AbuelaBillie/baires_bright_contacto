@@ -26,6 +26,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="./scripts/mailSend.js"></script>
     <title>Baires Brigth - Ventas</title>
   </head>
   <body>
@@ -68,10 +69,10 @@
         </div>
         <div class="contact-info">
           <h2>Contactanos</h2>
-          <form action="submit">
-            <input type="text" name="name" placeholder="Nombre*" required />
-            <input type="email" name="email" placeholder="Email*" required />
-            <input type="text" name="phone" placeholder="Teléfono*" required />
+          <form id="contact-form">
+            <input type="text" name="name" id="name" placeholder="Nombre*" required />
+            <input type="email" name="email" id="email" placeholder="Email*" required />
+            <input type="text" name="phone" id="phone" placeholder="Teléfono*" required />
             <textarea
               name="message"
               id="message"
@@ -81,6 +82,7 @@
             ></textarea>
             <div class="btnForm">
               <button type="submit">Enviar</button>
+              <span class="loader oculto"></span>
             </div>
           </form>
         </div>
@@ -201,5 +203,6 @@
         >
       </div>
     </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
